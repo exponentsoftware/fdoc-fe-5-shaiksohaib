@@ -1,0 +1,42 @@
+$theme-colors: (
+  "primary": #1ed760,
+  "black": #131313,
+  "grey": #a3a3a3,
+  "white": #ffffff,
+);
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+p {
+  user-select: text;
+}
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+img,
+button,
+a {
+  transition: ease 0.3s;
+}
+.cp {
+  cursor: pointer;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

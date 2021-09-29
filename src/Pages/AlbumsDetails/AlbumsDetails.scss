@@ -1,0 +1,33 @@
+.albumsDetails {
+  .info_section {
+    -webkit-mask-image: linear-gradient(rgb(255, 255, 255) 80%, transparent);
+    mask-image: linear-gradient(rgb(0, 0, 0), transparent);
+  }
+  .icon_section {
+    -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 0.6), #121212);
+    mask-image: linear-gradient(rgba(0, 0, 0, 0.6), #121212);
+  }
+
+  .tr_special_opton {
+    width: 10rem;
+    i {
+      display: none;
+      &:hover {
+        color: var(--bs-primary);
+      }
+    }
+  }
+  .table-borderless {
+    tbody {
+      tr {
+        &:hover {
+          .tr_special_opton {
+            i {
+              display: inline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

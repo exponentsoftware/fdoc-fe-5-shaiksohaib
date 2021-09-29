@@ -1,0 +1,44 @@
+$cardHeight: 260px;
+$cardWidth: 200px;
+.singleCard {
+  width: $cardWidth;
+  height: $cardHeight;
+  background: #171717;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  &:hover {
+    background: #242424;
+    .playButtonWrap {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .cover {
+    width: $cardWidth;
+    height: 200px;
+    position: relative;
+    border-radius: 0.5rem;
+  }
+  .playButtonWrap {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: 0.3s;
+    .playButton {
+      width: 30px;
+      height: 30px;
+      color: white;
+      background: #00b255;
+      border: none;
+      border-radius: 50%;
+      font-size: 1rem;
+      box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

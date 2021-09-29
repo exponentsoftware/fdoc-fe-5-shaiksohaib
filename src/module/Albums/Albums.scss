@@ -1,0 +1,16 @@
+.albums {
+  overflow: hidden;
+  .albumscontainer {
+    overflow-x: scroll;
+    padding-right: 17px;
+    box-sizing: content-box;
+    &::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: var(--bs-primary);
+      border-radius: 12px 12px 12px 12px;
+    }
+  }
+}
